@@ -30,15 +30,15 @@ public void run()
 	 // options.setExperimentalOption("prefs", chromePrefs);
 	
 	options.addArguments("--headless");
-options.addArguments("window-size=1400,1500");
-options.addArguments("--disable-gpu");
-options.addArguments("--no-sandbox");
-options.addArguments("start-maximized");
-options.addArguments("enable-automation");
-options.addArguments("--disable-infobars");
-options.addArguments("--disable-dev-shm-usage");
+	options.addArguments("window-size=1400,1500");
+	options.addArguments("--disable-gpu");
+	options.addArguments("--no-sandbox");
+	options.addArguments("start-maximized");
+	options.addArguments("enable-automation");
+	options.addArguments("--disable-infobars");
+	options.addArguments("--disable-dev-shm-usage");
 
-ChromeDriver driver = new ChromeDriver(options);	   
+	ChromeDriver driver = new ChromeDriver(options);	   
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
 	   driver.findElement(By.name("email")).sendKeys("mds0418@gmail.com");
 	   driver.findElement(By.name("password")).sendKeys("HomeRiver1#");
