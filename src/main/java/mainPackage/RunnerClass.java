@@ -42,7 +42,7 @@ public void run()
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
 	   driver.findElement(By.name("email")).sendKeys("mds0418@gmail.com");
 	   driver.findElement(By.name("password")).sendKeys("HomeRiver1#");
-	   driver.findElement(By.xpath("//*[@value='Sign Me Innnnnn']")).click();	
+	   driver.findElement(By.xpath("//*[@value='Sign Me In']")).click();	
 }
 	
 }
