@@ -26,7 +26,7 @@ public void run()
 	   WebDriverManager.chromedriver().setup();
 	   
 	   ChromeOptions options = new ChromeOptions();
-	   ChromeDriver driver = new ChromeDriver(options);
+	   
 	 // options.setExperimentalOption("prefs", chromePrefs);
 	
 	options.add_argument("--headless");
@@ -38,7 +38,7 @@ options.add_argument("enable-automation");
 options.add_argument("--disable-infobars");
 options.add_argument("--disable-dev-shm-usage");
 
-	   
+ChromeDriver driver = new ChromeDriver(options);	   
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
 	   driver.findElement(By.name("email")).sendKeys("mds0418@gmail.com");
 	   driver.findElement(By.name("password")).sendKeys("HomeRiver1#");
