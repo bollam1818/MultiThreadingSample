@@ -29,14 +29,14 @@ public void run()
 	   
 	 // options.setExperimentalOption("prefs", chromePrefs);
 	
-	options.add_argument("--headless");
-options.add_argument("window-size=1400,1500");
-options.add_argument("--disable-gpu");
-options.add_argument("--no-sandbox");
-options.add_argument("start-maximized");
-options.add_argument("enable-automation");
-options.add_argument("--disable-infobars");
-options.add_argument("--disable-dev-shm-usage");
+	options.addArguments("--headless");
+options.addArguments("window-size=1400,1500");
+options.addArguments("--disable-gpu");
+options.addArguments("--no-sandbox");
+options.addArguments("start-maximized");
+options.addArguments("enable-automation");
+options.addArguments("--disable-infobars");
+options.addArguments("--disable-dev-shm-usage");
 
 ChromeDriver driver = new ChromeDriver(options);	   
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
